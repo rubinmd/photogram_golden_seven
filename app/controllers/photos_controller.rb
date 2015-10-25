@@ -36,6 +36,6 @@ class PhotosController < ApplicationController
     p.caption=@caption
     p.source=@source
     p.save
-    redirect_to("http://localhost:3000/photos")
+    redirect_to("http://localhost:3000/photos/"+@id)
   end
 end
