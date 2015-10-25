@@ -1,4 +1,4 @@
 <h1>Photo Details</h1>
 <img width="720" src="<%= Photo.find(@id).source %>">
-<%= Photo.find(@id).caption %>
-<a href="/photos">Back</a> Edit Delete
+<p><%= Photo.find(@id).caption %></p>
+<a href="/photos">Back</a> <a href="/photos/<%= @id %>/edit">Edit</a> <a href="/delete_photo/<%= @id %>">Delete</a>
