@@ -3,5 +3,9 @@ class PhotosController < ApplicationController
     @list_of_photos = Photo.all
   end
 
+  def show
+    @id=params[:id]
+  end
+
 
 end
